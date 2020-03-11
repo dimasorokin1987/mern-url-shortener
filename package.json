@@ -4,6 +4,7 @@
   "description": "mern stack",
   "main": "app.js",
   "scripts": {
+    "postinstall": "cd client && npm install",
     "start": "cross-env NODE_ENV=production node app.js",
     "server": "nodemon app.js",
     "client": "npm run start --prefix client",
